@@ -1,0 +1,117 @@
+# Requisitos funcionais
+
+## Dispositivos
+O sistema deve tratar dois tipos principais:
+- collector
+- printer
+
+Campo obrigatório:
+- device_type
+
+## Status válidos
+- disponivel
+- em_uso
+- manutencao
+- quebrado
+- nao_encontrado
+- desativado
+
+Não permitir valores fora dessa lista.
+
+## Coletores
+Campos principais:
+- modelo
+- numero_interno
+- serial
+- mac_address
+- status
+- posicao_rack
+- observacoes
+- display_code
+- collector_key
+
+Regras:
+- display_code = MODELO-ID
+- collector_key = MODELO-ID-SERIAL
+- serial e id interno não devem ser livremente editáveis
+
+## Impressoras
+Campos principais:
+- modelo
+- numero_interno
+- serial
+- mac_address
+- ip
+- patrimonio
+- localizacao
+- observacoes
+- status
+- display_code
+- device_key
+
+## Alteração manual de status
+Sempre abrir modal contendo:
+- dispositivo
+- status atual
+- novo status
+- justificativa
+
+A justificativa é obrigatória.
+
+## Desativação lógica
+Ao excluir:
+- não apagar do banco
+- alterar status para desativado
+- exigir justificativa
+- gerar log
+- manter histórico
+- impedir uso operacional
+
+## Dashboard
+Exibir:
+- total de coletores
+- total de impressoras
+- contagem por status
+- atualização automática
+
+## Rack
+- visualização dos coletores
+- blocos visuais por dispositivo
+- cor por status
+- clique apenas informativo
+- não alterar status pelo rack
+
+## Modo bipagem
+- leitura operacional
+- alternância controlada de status
+- atualização automática de interface
+- registro em log
+
+## Inventário
+- inventário físico de dispositivos
+- comparação entre estado esperado e estado encontrado
+- histórico de inventários
+
+## Manutenção
+- categorias configuráveis
+- abertura e encerramento de manutenção
+- histórico
+
+## Auditoria
+- tela centralizada de eventos
+- filtros por data, tipo, usuário, dispositivo e origem
+
+## Ocorrências por turno
+- diurno = 06:00 até 16:29
+- noturno = 16:30 até 05:59
+- cálculo automático com possibilidade de edição manual
+
+## E-mail automático
+- alerta diário de coletores pendentes de devolução
+- rotina automática às 06:00
+- log da execução
+
+## Etiquetas e QR Codes
+- gerar QR individual e em lote
+- etiquetas com tratamento correto de formatos proprietários
+- não simular `.LBL` sem modelo válido
