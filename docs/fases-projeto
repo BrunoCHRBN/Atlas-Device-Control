@@ -1,0 +1,53 @@
+# Fases do projeto
+
+## Fase 1
+Fundação técnica:
+- stack
+- estrutura do projeto
+- autenticação
+- banco
+- migrations
+- layout base
+
+## Fase 2
+Núcleo de dispositivos:
+- modelagem de coletores e impressoras
+- CRUD
+- status
+- desativação lógica
+- histórico
+- logs
+
+## Fase 3
+Dashboard e rack:
+- cards operacionais
+- contadores por status
+- rack visual
+- atualização automática
+
+## Fase 4
+Modo bipagem e QR Codes:
+- leitura operacional
+- alternância de status
+- logs
+- geração de QR
+
+## Fase 5
+Inventário e manutenção:
+- sessões de inventário
+- conferência
+- categorias de manutenção
+- abertura e fechamento
+
+## Fase 6
+Ocorrências e auditoria:
+- turnos
+- registros manuais
+- filtros avançados
+- tela de auditoria central
+
+## Fase 7
+E-mail e etiquetas:
+- rotina diária de e-mail
+- configuração SMTP/OAuth
+- tratamento correto de etiquetas e `.LBL`
