@@ -1,0 +1,48 @@
+# Regras técnicas
+
+## Fonte oficial
+Banco de dados interno é a fonte oficial de verdade.
+
+Excel:
+- importação inicial
+- importação controlada
+- exportação
+- backup externo
+
+## Logs centralizados
+Tabela principal de auditoria:
+- system_logs
+
+Campos obrigatórios:
+- id
+- timestamp
+- usuario
+- tipo_evento
+- tipo_dispositivo
+- device_key
+- status_anterior
+- status_novo
+- justificativa
+- descricao
+- origem
+
+## Arquitetura obrigatória
+- não armazenar histórico na tabela principal de dispositivos
+- usar exclusão lógica
+- usar componentes reutilizáveis
+- padronizar modais, filtros e tabelas
+- manter equivalência entre Coletores e Impressoras
+- atualizar interface sem reload após alterações
+
+## Segurança
+- exigir login
+- criar usuário administrador inicial
+- senha padrão inicial: Pr0meteus
+
+## Interface
+Paleta:
+- azul institucional: #355A75
+- fundo: #F5F6F8
+- bordas: #E1E4E8
+- cards: #FFFFFF
+- alerta: #E53935
