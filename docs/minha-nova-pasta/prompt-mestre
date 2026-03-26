@@ -1,0 +1,24 @@
+Use os arquivos dentro de /docs como especificação principal do projeto.
+
+Quero que você desenvolva o sistema Gestão de Dispositivos Logísticos por fases, preservando consistência arquitetural, banco relacional escalável e equivalência funcional entre os módulos Coletores e Impressoras.
+
+Regras obrigatórias:
+- não inventar requisitos fora da documentação
+- banco de dados interno é a fonte oficial de verdade
+- Excel só pode ser usado para importação inicial, importação controlada, exportação e backup
+- não armazenar histórico dentro da tabela principal de dispositivos
+- usar logs centralizados em system_logs
+- usar exclusão lógica
+- toda alteração manual de status exige justificativa
+- os status válidos são apenas: disponivel, em_uso, manutencao, quebrado, nao_encontrado, desativado
+- módulos Coletores e Impressoras devem compartilhar lógica reutilizável sempre que aplicável
+- interface desktop web
+- documentar decisões técnicas relevantes em markdown
+
+Sempre trabalhe apenas na fase solicitada.
+Ao final de cada tarefa, entregue:
+1. resumo técnico do que foi implementado
+2. arquivos criados ou alterados
+3. migrations criadas
+4. pendências e riscos identificados
+5. próximos passos recomendados
