@@ -1,0 +1,38 @@
+# Visão geral
+
+Criar uma aplicação desktop web chamada Gestão de Dispositivos Logísticos, destinada ao controle operacional e administrativo de coletores e impressoras.
+
+## Escopo principal
+- Coletores Zebra TC21, TC22 e TC8300
+- Impressoras logísticas
+- Rastreabilidade
+- Manutenção
+- Inventário
+- Auditoria
+- Ocorrências por turno
+- QR Codes
+- Etiquetas
+- Dashboard operacional
+- Controle de responsabilidade
+- Notificações automáticas por e-mail
+
+## Módulos
+- Dashboard
+- Modo Bipagem
+- Coletores
+- Impressoras
+- Mapa de Rack
+- QR Codes
+- Inventário
+- Manutenção
+- Auditoria de Eventos
+- Ocorrências por Turno
+- Configurações
+
+## Princípios de arquitetura
+- Banco relacional
+- Estado atual separado de histórico
+- Logs centralizados
+- Exclusão lógica
+- Componentes reutilizáveis
+- Consistência funcional entre módulos equivalentes
